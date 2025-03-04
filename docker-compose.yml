@@ -1,0 +1,21 @@
+services:
+  training:
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    container_name: emotion_training
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    tty: true
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: emotion_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+    restart: always

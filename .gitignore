@@ -1,0 +1,32 @@
+# .gitignore - Fichier de configuration pour Git
+
+# Environnement virtuel
+venv/
+__pycache__/
+
+# Fichiers de logs
+*.log
+logs/
+
+# Modèles et données volumineuses
+models/
+
+# Fichiers temporaires et caches
+*.tmp
+*.swp
+*.bak
+
+# Fichiers de configuration de l'IDE
+.vscode/
+.idea/
+
+# Docker
+*.env
+docker-compose.override.yml
+
+# TensorBoard logs
+logs/
+
+# Autres fichiers spécifiques à l'OS
+.DS_Store
+Thumbs.db
