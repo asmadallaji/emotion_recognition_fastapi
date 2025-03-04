@@ -10,7 +10,7 @@
 
 ### 1. Clonez le projet
 ```bash
-git clone https://github.com/asma/emotion_recognition_fastapi.git
+git clone https://github.com/asmadallaji/emotion_recognition_fastapi.git
 cd emotion_recognition_fastapi
 ```
 
